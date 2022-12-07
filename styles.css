@@ -1,0 +1,129 @@
+/*h1 {
+	background-color: aqua;  [for WHOLE h1 Tag]
+}*/
+
+/*.aquaColor{
+	background-color: aqua;  [for a PARTICULAR tag in h1 by creating a CLASS]
+}*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.root{
+	--pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+body{
+	background-image: url(./images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: lightblue;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+}
+
+.title{
+	color: darkblue;
+	font-weight: 900;
+	font-size: 32px;
+}
+
+.hero-image{
+	width: 100%;  /*copies width of parent(pre defined)*/
+}
+
+.container{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.container>*{
+	margin: 13px 0;    /*  first for TOP&BOTTOM, second for LEFT&RIGHT */
+}
+
+.card{
+	width: 450px;
+	background-color: white;
+    color: rgb(134,159,167);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 45px auto;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;   /*while editing in chrome doesn't change the original width and height8*/
+}
+
+.para-decp{
+	line-height: 20px;
+}
+
+button{
+	width: 100%;
+	border: none;
+	font-weight: 700;
+	font-size: 0.9rem;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.proceed-button{
+	background-color: blue;
+	padding: 1rem 0;
+	color: white;
+	box-shadow: 0 20px 30px -8px rgb(134,159,167);
+}
+
+.proceed-button:hover {
+	opacity: 8;
+}
+
+.cancel-button{
+	background-color: white;
+	color: rgb(134,159,167);
+	margin-top: 22px;
+
+}
+
+.cancel-button:hover{
+	color: black;
+}
+
+.block{
+	font-size: 16px;
+	background-color: hsl(225, 100%, 98%);;
+	padding: 25px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.block a{
+	color: hsl(245, 75%, 52%);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.block a:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.block strong{
+	color: hsl(223, 47%, 23%);
+}
+
